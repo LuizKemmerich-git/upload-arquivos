@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background: #f1f1f1;
+  justify-content: center;
+  font-family: 'Baloo Bhai 2';
+}
+
+.upload-wrapper {
+  display: grid;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  grid-template-rows: auto auto 1fr auto;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.256);
+}
+
+.upload-zone {
+  width: 100%;
+  display: grid;
+  margin: 15px 0;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  justify-items: center;
+  align-content: center;
+  border: 1.6px dashed #00000070;
+}
+
+#input-file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.bi-cloud-upload {
+  line-height: 1;
+  font-size: 50px;
+}
+
+.action-btns {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: .8px;
+  font-family: 'Baloo Bhai 2';
+  background-color: rgb(211, 211, 211);
+}
+
+#reset-btn:hover {
+  background-color: rgb(195, 195, 195);
+}
+
+#convert-btn {
+  background-color: rgb(215, 106, 28);
+  color: white;
+}
+
+#convert-btn:hover {
+  background-color: rgb(234, 123, 43);
+}
+
+.is-dragging {
+  border: 2px dashed rgb(255, 170, 11);
+  background-color: rgba(255, 166, 0, 0.163);
+}
